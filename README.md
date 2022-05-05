@@ -1,3 +1,5 @@
 # front-end-exploration
 
-Working through: https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web
+Worked through: https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web
+
+Created a Basic Resume Page
