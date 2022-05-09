@@ -1,85 +1,197 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
+
+<head>
+    <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0">
     <title>Kayla Manahan's Resume</title>
     <link href="styles/style.css" rel="stylesheet" type="text/css">
-  </head>
-  <body onload="htmlTableOfContents();"> 
-    <h1>Kayla Manahan</h1>
+    <script src="https://kit.fontawesome.com/d36a4059fd.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="scripts/script.js"></script>
+</head>
 
-    <img id='headshot' src="images/headshot.jpeg" alt="Image of Kayla Manahan: UNB BCS Student">
-    
-		<div class="toc">
-        <h2>Table of Contents</h2>
-        <ul>
-            <li><a href="#sec-1">Contact Information</a></li>
-            <li><a href="#sec-2">Education</a></li>
-            <li><a href="#sec-3">Skills</a></li>
-            <li><a href="#sec-4">Work Experience</a></li>
-            <li><a href="#sec-5">Volunteer Experience</a></li>
-            <li><a href="#sec-6">Awards</a></li>
-            <li><a href="#sec-7">References</a></li>
-        </ul>
-		</div>
-		<main>
-            <h2 id='sec-1'>Contact Information</h2>
-            <p>
-                E-mail: khawkin2@unb.ca 
-                <br> Phone: (506) 470-7222
-                <br><a href="https://www.linkedin.com/in/kayla-manahan-274012193/">LinkedIn</a>
-            </p>
+<body>
 
-            <h2 id='sec-2'>Education</h2>
-            <ul>
-                <li>Bachelor of Computer Science, University of New Brunswick (2017-Present)</li>
-                <li>High School Diploma, Fredericton High School (2013-2017)</li>
-            </ul>
+    <div class="grid-container">
+        <section id="page">
+            <header>
+                <div id="header" class="header">
+                    <h1>Kayla Manahan</h1>
+                    <td><img id='headshot' src="images/headshot.jpeg" alt="Image of Kayla Manahan: UNB BCS Student">
+                    </td>
+                </div>
+            </header>
+            <main>
+                <div id="main" class="main">
+                    <div class="toc">
+                        <h2>Table of Contents</h2>
+                        <table>
+                            <tr>
+                                <td>
+                                    <i class='fas fa-at'></i>
+                                    <a href="#sec-1">Contact Information</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class='fas fa-graduation-cap'></i>
+                                    <a href="#sec-2">Education</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class='fas fa-code'></i>
+                                    <a href="#sec-3"> Skills</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class='fas fa-building'>&nbsp;&nbsp;</i>
+                                    <a href="#sec-4"> Work Experience</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class='fas fa-hands-helping'></i>
+                                    <a href="#sec-5"> Volunteer Experience</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class='fas fa-award'></i>
+                                    <a href="#sec-6"> Awards</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class='fas fa-phone'></i>
+                                    <a href="#sec-7"> References</a>
+                                </td>
+                            </tr>
+                        </table>
 
-            <h2 id='sec-3'>Skills</h2>
-                <h3>Programming Languages</h3>
-                <ul>
-                    <li>Java / Rust / C</li>
-                    <li>HTML / CSS / JavaScript</li>
-                    <li>Python / Ruby</li>
-                    <li>SQL</li>
-                </ul>
-                <h3>Operating Systems</h3>
-                <ul> 
-                    <li>Windows</li>
-                    <li>Linux</li>
-                    <li>MacOS</li>
-                    <li>Android / iOS</li>
-                </ul>
+                    </div>
+                    <h2 id='sec-1' onCLick="loadPage('contact')">Contact Information</h2>
+                    <table>
+                        <tr>
+                            <th>Email:</th>
+                            <td>khawkin2@unb.ca</td>
+                        </tr>
+                        <tr>
+                            <th>Phone:</th>
+                            <td> (506) 470-7222</td>
+                        </tr>
+                        <tr>
+                            <th>Social:</th>
+                            <td><a href="https://www.linkedin.com/in/kayla-manahan-274012193/">LinkedIn</a></td>
+                        </tr>
+                    </table>
+                    <h2 id='sec-2' onCLick="loadPage('education')">Education</h2>
+                    <table>
+                        <tr>
+                            <td>Bachelor of Computer Science, University of New Brunswick (2017-Present)</td>
+                        </tr>
+                        <tr>
+                            <td>High School Diploma, Fredericton High School (2013-2017)</td>
+                        </tr>
+                    </table>
 
-            <h2 id='sec-4'>Work Experience</h2>
-                <h3>Software Engineer, Sedin Technologies (May 2021-August 2021)</h3>
-                <ul>
-                    <li>Self-driven environment.</li>
-                    <li>Assisted in the development of an API service with Slack integration using Rust.</li>
-                    <li>Implemented many open-source crates from the community.</li>
-                    <li>SQL</li>
-                </ul>
-                <h3>SCRUM Software Engineer, Introhive (September 2019-December 2019)</h3>
-                <ul> 
-                    <li>Fast-paced environment.</li>
-                    <li>Fixed defects and assisted with testing new features.</li>
-                    <li>Regular regression testing.</li>
-                </ul>
+                    <h2 id='sec-3' onCLick="loadPage('skills')">Skills</h2>
+                    <table>
+                        <tr>
+                            <th>Programming Languages</th>
+                        </tr>
+                        <tr>
+                            <td>Java / Rust / C</td>
+                        </tr>
+                        <tr>
+                            <td>HTML / CSS / JavaScript</td>
+                        </tr>
+                        <tr>
+                            <td>Python / Ruby</td>
+                        </tr>
+                        <tr>
+                            <td>SQL</td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <th>Operating Systems</th>
+                        </tr>
+                        <tr>
+                            <td>Windows</td>
+                        </tr>
+                        <tr>
+                            <td>Linux</td>
+                        </tr>
+                        <tr>
+                            <td>MacOS</td>
+                        </tr>
+                        <tr>
+                            <td>Android / iOS</td>
+                        </tr>
+                    </table>
+                    <h2 id='sec-4' onCLick="loadPage('work')">Work Experience</h2>
+                    <table>
+                        <tr>
+                            <th>Software Engineer, Sedin Technologies (May 2021-August 2021)</th>
+                        </tr>
+                        <tr>
+                            <td>Self-driven environment.</td>
+                        </tr>
+                        <tr>
+                            <td>Assisted in the development of an API service with Slack integration using Rust.</td>
+                        </tr>
+                        <tr>
+                            <td>Implemented many open-source crates from the community.</td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <th>SCRUM Software Engineer, Introhive (September 2019-December 2019)</th>
+                        </tr>
+                        <tr>
+                            <td>Fast-paced environment.</td>
+                        </tr>
+                        <tr>
+                            <td>Fixed defects and assisted with testing new features.</td>
+                        </tr>
+                        <tr>
+                            <td>Regular regression testing.</td>
+                        </tr>
+                    </table>
 
-            <h2 id='sec-5'>Volunteer Experience</h2>
-                <h3>CS House Leader, UNB Fredericton (September 2020-April 2021)</h3>
-                <ul> 
-                    <li>Helping first year students adjust to university life.</li>
-                    <li>Sending reminders for events.</li>
-                    <li>Directing students to proper campus resources. (ex. Counselling)</li>
-                </ul>
-            
-            <h2 id='sec-6'>Awards</h2>
-                <p>Governor Thomas Carleton Scholarship (2017-2018)</p>
-            
-            <h2 id='sec-7'>References</h2>
-                <p>Available upon request</p>
+                    <h2 id='sec-5' onCLick="loadPage('volunteer')">Volunteer Experience</h2>
+                    <table>
+                        <tr>
+                            <th>CS House Leader, UNB Fredericton (September 2020-April 2021)</th>
+                        </tr>
+                        <tr>
+                            <td>Helping first year students adjust to university life.</td>
+                        </tr>
+                        <tr>
+                            <td>Sending reminders for events</td>
+                        </tr>
+                        <tr>
+                            <td>Directing students to proper campus resources. (ex. Counselling)</td>
+                        </tr>
+                    </table>
+                    <h2 id='sec-6' onCLick="loadPage('awards')">Awards</h2>
+                    <table>
+                        <tr>
+                            <td>Governor Thomas Carleton Scholarship (2017-2018)</td>
+                        </tr>
+                    </table>
+                    <h2 id='sec-7' onCLick="loadPage('references')">References</h2>
+                    <table>
+                        <tr>
+                            <td>Available upon request</td>
+                        </tr>
+                    </table>
+                </div>
+            </main>
+        </section>
 
-  </body>
+    </div>
+</body>
+
 </html>
