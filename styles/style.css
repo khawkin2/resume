@@ -67,6 +67,15 @@ section {
     background-color: lightblue;
 }
 
+.sidebar {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.sidebar-icons {
+    text-align: center;
+}
+
 .header {
     grid-area: header;
     text-align: center;
@@ -79,29 +88,11 @@ section {
     padding: 0.1%;
 }
 
-.grid-container {
+.container {
     display: grid;
 }
 
-#page {
-    display: grid;
-    grid-template-areas:
-        'h'
-        'm';
-    padding: 5px;
-}
-
-#page > header {
-    grid-area: h;
-    align-content: center;
-}
-
-#page > main {
-    grid-area: m;
-    align-content: stretch;
-}
-
-img {
+#headshot {
     width: 15%;
     max-width: 150px;
     min-width: 100px;
