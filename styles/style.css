@@ -1,5 +1,5 @@
 html {
-    font-size: 12px;
+    font-size: 16px;
     font-family: 'Courier New', monospace;
     scroll-behavior: smooth;
     background-color: #2d2b28;
@@ -81,6 +81,8 @@ section {
     text-align: center;
     margin: 1%;
     background-color: lavenderblush;
+    position: sticky;
+    top: 10px;
 }
 .main {
     grid-area: main;
