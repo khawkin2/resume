@@ -93,6 +93,14 @@ main {
     cursor: pointer;
 }
 
+.flex-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+}
+
 .social-buttons {
     width: 58px;
     height: 58px;
