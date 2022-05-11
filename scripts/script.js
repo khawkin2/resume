@@ -3,7 +3,6 @@ window.onload();
 function onload() {
 }
 
-function loadPage(name){
-    console.log(name);
-    window.location = name;
+function loadPage(location){
+    window.location = location;
 }

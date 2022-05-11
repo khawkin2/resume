@@ -15,17 +15,20 @@
     <div class="container">
         <header>
                 <h1>Kayla Manahan</h1>
-                <td><img id='headshot' src="images/headshot.jpeg" alt="Image of Kayla Manahan: UNB BCS Student">
-                </td>
+                <img id='headshot' src="images/headshot.jpeg" alt="Image of Kayla Manahan">
+                <br>
+                <button class="social-buttons" onClick="loadPage('https://www.linkedin.com/in/kayla-manahan-274012193/')">
+                    <img src="images/linkedin_icon.png" alt="Linkedin Logo" width="50px" height="50px">
+                </button>
+                <button class="social-buttons" onClick="loadPage('https://github.com/khawkin2')">
+                    <span class="iconify" data-icon="octicon:mark-github-16" data-width="50px" data-height="50px"></span>
+                </button>
         </header>
         <div class="sidebar">
-            <button id="sidebar-toggle">
-                <span class="sidebar-icon"><i class='fas fa-bars'></i></span>
-            </button>
             <h2>Table of Contents</h2>
             <div class="toc">
                 <span class="toc-icons"><i class='fas fa-at'></i></span>
-                <span class="toc-link"><a href="../resume/templates/contact.html">Contact Information</a></span>
+                <span class="toc-link"><a href="../resume/templates/contact.html">Contact</a></span>
 
                 <span class="toc-icons"><i class='fas fa-graduation-cap'></i></span>
                 <span class="toc-link"><a href="../resume/templates/education.html">Education</a></span>
@@ -34,10 +37,10 @@
                 <span class="toc-link"><a href="../resume/templates/skills.html">Skills</a></span>
 
                 <span class="toc-icons"><i class='fas fa-building'></i></span>
-                <span class="toc-link"><a href="../resume/templates/work.html">Work Experience</a></span>
+                <span class="toc-link"><a href="../resume/templates/work.html">Work</a></span>
 
                 <span class="toc-icons"><i class='fas fa-hands-helping'></i></span>
-                <span class="toc-link"><a href="../resume/templates/volunteer.html">Volunteer Experience</a></span>
+                <span class="toc-link"><a href="../resume/templates/volunteer.html">Volunteer</a></span>
 
                 <span class="toc-icons"><i class='fas fa-award'></i></span>
                 <span class="toc-link"><a href="../resume/templates/awards.html">Awards</a></span>
@@ -47,115 +50,7 @@
             </div>
         </div>
         <main>
-            <button class="social-buttons" onClick="loadPage('https://www.linkedin.com/in/kayla-manahan-274012193/')">
-                <img src="images/linkedin_icon.png" alt="Linkedin Logo" width="75px" height="75px">
-            </button>
-            <button class="social-buttons" onClick="loadPage('https://github.com/khawkin2')">
-                <span class="iconify" data-icon="octicon:mark-github-16" data-width="75px" data-height="75px"></span>
-            </button>
-           
-            <h2 id='sec-2' onCLick="loadPage('education')">Education</h2>
-            <table>
-                <tr>
-                    <td>Bachelor of Computer Science, University of New Brunswick (2017-Present)</td>
-                </tr>
-                <tr>
-                    <td>High School Diploma, Fredericton High School (2013-2017)</td>
-                </tr>
-            </table>
-
-            <h2 id='sec-3' onCLick="loadPage('skills')">Skills</h2>
-            <table>
-                <tr>
-                    <th>Programming Languages</th>
-                </tr>
-                <tr>
-                    <td>Java / Rust / C</td>
-                </tr>
-                <tr>
-                    <td>HTML / CSS / JavaScript</td>
-                </tr>
-                <tr>
-                    <td>Python / Ruby</td>
-                </tr>
-                <tr>
-                    <td>SQL</td>
-                </tr>
-            </table>
-            <table>
-                <tr>
-                    <th>Operating Systems</th>
-                </tr>
-                <tr>
-                    <td>Windows</td>
-                </tr>
-                <tr>
-                    <td>Linux</td>
-                </tr>
-                <tr>
-                    <td>MacOS</td>
-                </tr>
-                <tr>
-                    <td>Android / iOS</td>
-                </tr>
-            </table>
-            <h2 id='sec-4' onCLick="loadPage('work')">Work Experience</h2>
-            <table>
-                <tr>
-                    <th>Software Engineer, Sedin Technologies (May 2021-August 2021)</th>
-                </tr>
-                <tr>
-                    <td>Self-driven environment.</td>
-                </tr>
-                <tr>
-                    <td>Assisted in the development of an API service with Slack integration using Rust.</td>
-                </tr>
-                <tr>
-                    <td>Implemented many open-source crates from the community.</td>
-                </tr>
-            </table>
-            <table>
-                <tr>
-                    <th>SCRUM Software Engineer, Introhive (September 2019-December 2019)</th>
-                </tr>
-                <tr>
-                    <td>Fast-paced environment.</td>
-                </tr>
-                <tr>
-                    <td>Fixed defects and assisted with testing new features.</td>
-                </tr>
-                <tr>
-                    <td>Regular regression testing.</td>
-                </tr>
-            </table>
-
-            <h2 id='sec-5' onCLick="loadPage('volunteer')">Volunteer Experience</h2>
-            <table>
-                <tr>
-                    <th>CS House Leader, UNB Fredericton (September 2020-April 2021)</th>
-                </tr>
-                <tr>
-                    <td>Helping first year students adjust to university life.</td>
-                </tr>
-                <tr>
-                    <td>Sending reminders for events</td>
-                </tr>
-                <tr>
-                    <td>Directing students to proper campus resources. (ex. Counselling)</td>
-                </tr>
-            </table>
-            <h2 id='sec-6' onCLick="loadPage('awards')">Awards</h2>
-            <table>
-                <tr>
-                    <td>Governor Thomas Carleton Scholarship (2017-2018)</td>
-                </tr>
-            </table>
-            <h2 id='sec-7' onCLick="loadPage('references')">References</h2>
-            <table>
-                <tr>
-                    <td>Available upon request</td>
-                </tr>
-            </table>
+            
         </main>
     </div>
         

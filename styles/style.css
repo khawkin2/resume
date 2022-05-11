@@ -14,7 +14,7 @@ table {
 h1 {
     font-size: 45px;
     margin: 0;
-    padding: 20px 0;
+    padding: 0;
     color: #2469ab;
 }
 
@@ -38,7 +38,22 @@ p, ul, li {
     line-height: 2;
     letter-spacing: 1px;
     margin: 0;
+    padding: 0;
     list-style-type: none;
+}
+
+a:link, a:visited {
+  background-color: lavenderblush;
+  color: #101010;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover {
+    background-color: rgb(165, 109, 127);
+    color: white;
 }
   
 body {
@@ -56,6 +71,7 @@ header {
 main {
     grid-column: 3/13;
     grid-row: 2;
+    margin: 2%;
 }
 
 .sidebar {
@@ -67,9 +83,10 @@ main {
     top: 0px;
 }
 
-#sidebar-toggle {
+#return-button {
     width: fit-content;
     height: fit-content;
+    font-size: 24px;
     align-self: flex-start;
     background: transparent;
     border: none;
@@ -77,8 +94,8 @@ main {
 }
 
 .social-buttons {
-    width: 83px;
-    height: 83px;
+    width: 58px;
+    height: 58px;
     padding: 0;
     background: transparent;
     border: none;
@@ -87,22 +104,24 @@ main {
 .social-buttons:hover {
     cursor: pointer;
     border-radius: 50%;
-    border: 4px solid rgb(253, 220, 231);
+    border: 4px solid rgb(165, 109, 127);
 }
 
 .toc {
     display: grid;
+    grid-column: 1/3;
+    grid-row: 2;
+    row-gap: 20px;
     grid-template-columns: 1fr 3fr;
     position: sticky;
     width: 100%;
-    background-color: rgb(255, 240, 245);
 }
 
 .toc-icons {
     text-align: center;
 }
 
-.toc-list:hover, #sec-1, #sec-2, #sec-3, #sec-4, #sec-5, #sec-6, #sec-7 {
+.toc-list:hover {
     cursor: pointer;
 }
 
@@ -113,7 +132,7 @@ main {
 }
 
 #headshot {
-    width: 15%;
+    width: 100%;
     max-width: 150px;
     min-width: 100px;
     height: auto;
