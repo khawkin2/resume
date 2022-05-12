@@ -27,7 +27,7 @@ h2 {
   color: #102459;
 }
 
-h3, th, td, th {
+h3 {
   font-size: 16px;
   flex-wrap: auto;
   text-align: left;
@@ -216,7 +216,10 @@ body {
 }
 
 .toc-icons {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
 .toc-list:hover {
