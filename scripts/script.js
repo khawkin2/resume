@@ -1,8 +1,3 @@
-window.onload();
-
-function onload() {
-}
-
-function loadPage(location){
+function loadPage(location) {
     window.location = location;
 }
