@@ -1,0 +1,76 @@
+html {
+  font-size: 18px;
+  font-family: "Courier New", monospace;
+  word-break: break-word;
+  scroll-behavior: smooth;
+  margin: 1%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  -moz-column-gap: 2vw;
+       column-gap: 2vw;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  grid-row: 5;
+  word-wrap: break-word;
+}
+
+body {
+  align-content: center;
+  background-color: #ffffff;
+}
+
+header {
+  grid-column: 1/13;
+  grid-row: 1;
+  text-align: center;
+  margin: 1% 0;
+  padding: 0;
+  background-color: #fff0f5;
+}
+
+h1 {
+  font-size: 45px;
+  margin: 0;
+  padding: 0;
+  color: #2469ab;
+}
+
+h2 {
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  color: #102459;
+  text-align: center;
+}
+
+li {
+  list-style-type: circle;
+}
+
+#return-button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-size: 24px;
+  align-self: flex-start;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#headshot {
+  width: 100%;
+  max-width: 150px;
+  min-width: 100px;
+  height: auto;
+  border-radius: 50%;
+}/*# sourceMappingURL=education.css.map */
