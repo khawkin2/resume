@@ -207,18 +207,22 @@ a {
 .background-mode {
     display: inline-block;
     font-family: inherit;
+
     background-color: $primary-colour;
-    color: $black;
     border: 2px solid $secondary-colour;
-    padding: 5px 5px;
+    color: $black;
+
     text-align: center;
+    align-self: flex-start;
+    justify-content: flex-start;
+
+    padding: 5px 5px;
     text-decoration: none;
     word-wrap: break-word;
 
     width: 206px; 
     max-height: 40px;
-    align-self: flex-start;
-    justify-content: flex-start;
+    
 
     &:hover {
         cursor: pointer;

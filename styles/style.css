@@ -195,16 +195,16 @@ a:hover {
   display: inline-block;
   font-family: inherit;
   background-color: #fff0f5;
-  color: #101010;
   border: 2px solid #a56d7f;
-  padding: 5px 5px;
+  color: #101010;
   text-align: center;
+  align-self: flex-start;
+  justify-content: flex-start;
+  padding: 5px 5px;
   text-decoration: none;
   word-wrap: break-word;
   width: 206px;
   max-height: 40px;
-  align-self: flex-start;
-  justify-content: flex-start;
 }
 .background-mode:hover {
   cursor: pointer;

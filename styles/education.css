@@ -73,4 +73,9 @@ li {
   min-width: 100px;
   height: auto;
   border-radius: 50%;
+}
+
+a.education-link {
+  color: #a56d7f;
+  text-decoration: none;
 }/*# sourceMappingURL=education.css.map */
