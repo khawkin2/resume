@@ -4,7 +4,7 @@ function loadPage(location) {
 
 function changeBackgroundColour() {
     let colour = randomColour();
-    console.log("Random colour Generated: " + colour);
+    console.log(`Random colour Generated: ${colour}`);
     document.body.style.backgroundColor = colour;
 }
 
