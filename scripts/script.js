@@ -1,6 +1,11 @@
 function loadPage(location) {
-    window.open(location, '_blank').focus();
+    window.location = location;
 }
+
+function loadUrl(url) {
+    window.open(url, '_blank').focus();
+}
+
 
 function changeBackgroundColour() {
     let colour = randomColour();
