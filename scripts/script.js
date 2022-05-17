@@ -1,5 +1,5 @@
 function loadPage(location) {
-    window.location = location;
+    window.open(location, '_blank').focus();
 }
 
 function changeBackgroundColour() {
