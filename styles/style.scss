@@ -1,11 +1,11 @@
-$primary-colour: #fff0f5;
-$secondary-colour: #a56d7f;
+$primary-accent: #fff0f5;
+$secondary-accent: #a56d7f;
 $title-colour: #2469ab;
-$header-colour: #102459;
-$black: #101010;
-$white: #efefef;
+$h2-colour: #102459;
+$dark-text: #101010;
+$light-text: #efefef;
 
-html {
+:root {
     font-size: 16px;
     font-family: 'Courier New', monospace;
     word-break: break-word;
@@ -21,6 +21,9 @@ html {
 
 main {
     display: flex;
+    align-content: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
     grid-row: 2;
     word-wrap: break-word;
 }
@@ -35,8 +38,8 @@ header {
     grid-row: 1;
     text-align: center;
     margin: 1% 0;
-    padding: 0;
-    background-color: $primary-colour;
+    padding: 5px 0px;
+    background-color: $primary-accent;
 }
 
 h1 {
@@ -50,7 +53,7 @@ h2 {
     font-size: 24px;
     margin: 0;
     padding: 0;
-    color: $header-colour;
+    color: $h2-colour;
     text-align: center;
 }
 
@@ -89,7 +92,7 @@ h2 {
 .social-buttons:hover {
     cursor: pointer;
     border-radius: 50%;
-    border: 4px solid $secondary-colour;
+    border: 4px solid $secondary-accent;
 }
 
 .toc {
@@ -170,7 +173,7 @@ h2 {
         justify-content: center;
     }
 
-    .background-mode {
+    .random-bg {
         align-self: center;
     }
 
@@ -189,8 +192,8 @@ h2 {
 
 a {
     &:link, &:visited {
-        background-color: $primary-colour;
-        color: $black;
+        background-color: $primary-accent;
+        color: $dark-text;
         padding: 5px 5px;
         text-align: center;
         text-decoration: none;
@@ -198,36 +201,33 @@ a {
     }
       
     &:hover {
-        background-color: $secondary-colour;
-        color: $white;
+        background-color: $secondary-accent;
+        color: $light-text;
     }
 }
 
-//Change Background button
-.background-mode {
-    display: inline-block;
+//button style
+button {
     font-family: inherit;
 
-    background-color: $primary-colour;
-    border: 2px solid $secondary-colour;
-    color: $black;
+    background-color: $primary-accent;
+    border: 2px solid $secondary-accent;
+    color: $dark-text;
 
     text-align: center;
     align-self: flex-start;
-    justify-content: flex-start;
+
+    max-width: 206px;
+    height: 30px;
 
     padding: 5px 5px;
     text-decoration: none;
     word-wrap: break-word;
 
-    width: 206px; 
-    max-height: 40px;
-    
-
     &:hover {
         cursor: pointer;
-        color: $white;
-        background-color: $secondary-colour;
-        border: 2px solid $primary-colour;
+        color: $light-text;
+        background-color: $secondary-accent;
+        border: 2px solid $primary-accent;
     }
 }

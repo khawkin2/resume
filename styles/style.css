@@ -1,4 +1,4 @@
-html {
+:root {
   font-size: 16px;
   font-family: "Courier New", monospace;
   word-break: break-word;
@@ -15,6 +15,9 @@ html {
 
 main {
   display: flex;
+  align-content: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
   grid-row: 2;
   word-wrap: break-word;
 }
@@ -29,7 +32,7 @@ header {
   grid-row: 1;
   text-align: center;
   margin: 1% 0;
-  padding: 0;
+  padding: 5px 0px;
   background-color: #fff0f5;
 }
 
@@ -165,7 +168,7 @@ h2 {
     justify-content: center;
   }
 
-  .background-mode {
+  .random-bg {
     align-self: center;
   }
 
@@ -191,22 +194,20 @@ a:hover {
   color: #efefef;
 }
 
-.background-mode {
-  display: inline-block;
+button {
   font-family: inherit;
   background-color: #fff0f5;
   border: 2px solid #a56d7f;
   color: #101010;
   text-align: center;
   align-self: flex-start;
-  justify-content: flex-start;
+  max-width: 206px;
+  height: 30px;
   padding: 5px 5px;
   text-decoration: none;
   word-wrap: break-word;
-  width: 206px;
-  max-height: 40px;
 }
-.background-mode:hover {
+button:hover {
   cursor: pointer;
   color: #efefef;
   background-color: #a56d7f;
